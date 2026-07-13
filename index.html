@@ -1,195 +1,305 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encomenda de Bolos Personalizados | NeirefreitasConfeitaria</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neire Freitas Confeitaria — Doces & Bolos Personalizados</title>
+  <meta name="description" content="Doces artesanais e bolos personalizados feitos com carinho para momentos únicos. Encomende pelo WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <div id="site">
-        <header class="header">
-            <nav class="navbar">
-                <a href="#Home"><img class="logo" src="Logo delicado da Neire Freitas.png" alt="Home"></a>
-                <div class="barrinha">
-                    <img class="icons-1" src="https://img.icons8.com/ios-filled/30/000000/search--v1.png" alt="Buscar">
-                    <a href="#Home">Home</a>
-                    <a href="#Menu">Menu</a>
-                    <a href="#Sobre">Sobre</a>
-                    <div class="search-box">
-                        <input type="text" id="searchInput" placeholder="O que deseja achar?">
-                    </div>
-                </div>
-            </nav>
-        </header>
 
-        <section class="home" id="Home">
-            <h2 class="tittle-home">Doces feitos com amor,</h2>
-            <h2 class="tittle-home2">PARA MOMENTOS</h2>
-            <h2 class="tittle-home2">ÚNICOS!</h2>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#home" class="brand">
+      <span class="brand-script">Neire Freitas</span>
+      <span class="brand-sub">Confeitaria Artística</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Início</a>
+      <a href="#menu">Menu</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  </header>
 
-            <a href="https://wa.me/5515997777210?text=Olá, gostaria de saber mais sobre seus doces!" target="_blank"
-                class="butao">
-                👤Encomende Agora📱💬
-            </a>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-eyebrow">✦ Confeitaria Artesanal ✦</p>
+      <h1>
+        Doces feitos com <em>amor</em>,<br />
+        para momentos <span class="hero-highlight">únicos</span>.
+      </h1>
+      <p class="hero-text">
+        Bolos personalizados e doces artesanais preparados com ingredientes selecionados,
+        sabor inesquecível e apresentação encantadora.
+      </p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/5515997777210?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20seus%20doces!"
+           target="_blank" rel="noopener" class="btn btn-primary">
+          💬 Encomendar pelo WhatsApp
+        </a>
+        <a href="#menu" class="btn btn-ghost">Ver o Menu ↓</a>
+      </div>
+    </div>
+    <div class="hero-decor"></div>
+  </section>
 
-            <br>
-
-            <a href="#Menu" class="butao2">
-                Ver Mais
-            </a>
-        </section>
-
-        <section class="menu-escondido" id="Menu">
-            <h2>Menu</h2>
-        </section>
-
-        <section class="products">
-            <div class="carousel">
-
-                <div class="card">
-                    <img src="5    WhatsApp Image 2026-04-03 at 6.47.31 PM.jpeg" alt="">
-                    <h3>Diversos Doces</h3>
-                    <p>Doces artesanais feitos com ingredientes de qualidade, desde os clássicos até opções gourmet e
-                        finas. Sabor, beleza e cuidado em cada detalhe para deixar seu momento ainda mais especial.</p>
-                    <button class="butao3" onclick="trocarPagina()">Ver Doces</button>
-                </div>
-
-                <div class="card">
-                    <img src="6 WhatsApp Image 2026-04-05 at 11.35.05 AM.jpeg" alt="">
-                    <h3>Bolos Especiais</h3>
-                    <p>Bolos personalizados para tornar sua comemoração ainda mais especial. Feitos com ingredientes de
-                        qualidade, recheios irresistíveis e decorações únicas que unem sabor, beleza e muito carinho.
-                    </p>
-                    <button class="butao3" onclick="irParaTela3()">Ver Nossos Bolos</button>
-                </div>
-
-                <div class="card">
-                    <img src="bolo-panetone.png" alt="">
-                    <h3>Pacotes Especiais</h3>
-                    <p>Nossos kits são a escolha perfeita para surpreender! Com uma combinação deliciosa de doces
-                        artesanais, eles trazem praticidade, variedade e uma apresentação encantadora, ideais para
-                        presentear ou deixar qualquer comemoração ainda mais especial.</p>
-                    <button class="butao3" onclick="irParaTela4()">Ver Todos os Pacotes</button>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="Sobre">
-            <h4 class="sobre-escondido">Sobre Nós....</h4>
-            <p class="sobre">Somos apaixonados por transformar momentos especiais em algo ainda mais doce. Nossa loja
-                nasceu
-                com o objetivo de oferecer bolos feitos com carinho, utilizando ingredientes de qualidade e receitas que
-                encantam em cada detalhe. Cada bolo é preparado com atenção e dedicação, pensando sempre em proporcionar
-                sabor, beleza e uma experiência única para nossos clientes. Trabalhamos com diferentes estilos e
-                sabores,
-                buscando atender todos os gostos e ocasiões. Seja para comemorar um aniversário, celebrar uma conquista
-                ou
-                simplesmente adoçar o dia, estamos aqui para fazer parte desses momentos com você.</p>
-        </section>
+  <!-- MENU / CATEGORIAS -->
+  <section class="section" id="menu">
+    <div class="section-header">
+      <p class="eyebrow">Nosso Cardápio</p>
+      <h2>Escolha sua <em>delícia</em></h2>
+      <p class="section-sub">Explore nossas categorias e descubra o doce perfeito para o seu momento.</p>
     </div>
 
-    <div class="Pagina-Doces" id="pagina-doces">
+    <div class="cards">
+      <article class="card" data-target="page-doces">
+        <div class="card-img" style="background-image:url('https://neire-freitas-confeitariaartisticas.github.io/Doces-e-Bolos-Personalizados/5%20%20%20%20WhatsApp%20Image%202026-04-03%20at%206.47.31%20PM.jpeg')"></div>
+        <div class="card-body">
+          <h3>Diversos Doces</h3>
+          <p>Doces artesanais feitos com ingredientes de qualidade — dos clássicos aos finos e gourmet. Sabor e beleza em cada detalhe.</p>
+          <button class="btn btn-outline">Ver Doces →</button>
+        </div>
+      </article>
 
-        <button onclick="voltarSite()" class="butao4" id="butao4"> ← Voltar</button>
-        <main class="main-doces">
-            <div class="mydiv">
-                <h2 class="h2">Doces Enrolados Tradicionais:</h2>
-                <p class="p">--Brigadeiro Tradicional <br> --Brigadeiro Branco <br> --Beijinho <br> --Bicho de pé</p>
-            </div>
+      <article class="card" data-target="page-bolos">
+        <div class="card-img" style="background-image:url('https://neire-freitas-confeitariaartisticas.github.io/Doces-e-Bolos-Personalizados/6%20WhatsApp%20Image%202026-04-05%20at%2011.35.05%20AM.jpeg')"></div>
+        <div class="card-body">
+          <h3>Bolos Especiais</h3>
+          <p>Bolos personalizados para tornar sua comemoração inesquecível. Recheios irresistíveis e decorações únicas.</p>
+          <button class="btn btn-outline">Ver Bolos →</button>
+        </div>
+      </article>
 
-            <div class="mydiv">
-                <h2 id="Goumerts">Doces Especiais e Goumerts</h2>
-                <p>--Uva glaçada <br>--Brigadeiro de Café<br>--Brigadeiro de Ninho com Nutella <br>--Brigadeiro de Ninho
-                    <br>--Brigadeiro de Churros <br>--Brigadeiro de Prestígio <br>--Brigadeiro trufado <br><span
-                        class="destaque2">(com chocolate
-                        granule)</span>
-                </p>
-            </div>
-
-            <div class="mydiv">
-                <h2 id="Finos">Doces Finos</h2>
-                <p>-Brigadeiro de Damasco <br>--Brigadeiro de Castanha de Caju<br> --Brigadeiro
-                    com Pérola <br>--Brigadeiro Brulê <br>--Camafeu <br> <span class="destaque">*quantidade mínima 20
-                        unidades</span> <br>--Cestinha e copinho de chocolate <br>
-                    <span class="destaque2">(decoração com cereja ou phisalis)</span> <br> <span
-                        class="destaque">*quantidade
-                        mínima 20 unidades</span>
-                </p>
-            </div>
-
-
-            <!-- <h2 id="observacao">Observações:</h2> 
-            <p id="paragra">✓ Pedido mínimo de 50 unidades para os doces enrolados. Abaixo dessa quantidade, será
-                cobrado valor unitário.
-                Consultar!
-                <br>✓ Nossos doces possuem padrão gourmet pesando entre 18 e 20 gramas.
-            </p> -->
+      <article class="card" data-target="page-kits">
+        <div class="card-img" style="background-image:url('https://neire-freitas-confeitariaartisticas.github.io/Doces-e-Bolos-Personalizados/bolo-panetone.png')"></div>
+        <div class="card-body">
+          <h3>Pacotes Especiais</h3>
+          <p>Kits com combinações deliciosas — praticidade, variedade e apresentação encantadora para presentear ou comemorar.</p>
+          <button class="btn btn-outline">Ver Pacotes →</button>
+        </div>
+      </article>
     </div>
-    </main>
+  </section>
 
-    <div class="pagina-3" id="pagina-3" style="display: none; padding: 2rem;">
-
-        <button onclick="voltarTela3()" class="butao4">← Voltar</button>
-
-        <div class="mydiv2">
-            <h1>♥ Massas e Coberturas ♥</h1>
-            <h2>♦Massas:</h2>
-            <p>•Baunilha <br>•Chocolate</p>
-            <h2>♦Coberturas:</h2>
-            <p>•Chantily <br>•Chantininho <br>•Chantily de Chocolate</p>
-        </div>
-        <div class="mydiv2">
-            <h1>♥ Recheios ♥</h1>
-            <h2>♦Escolha seu recheio:</h2>
-            <p>•Brigadeiro <br>•Brigadeiro de Doce de Leite <br>•Brigadeiro de Nozes <br>•Brigadeiro de Ninho
-                <br>•Brigadeiro Branco com Morango <br>•Brigadeiro com abacaxi <br>•Creme com Morango <br>•Creme com
-                Pêssego
-            </p>
-            <h2>♦Recheios Especiais:</h2>
-            <p>•Mousse de Chocolate ao leite/ Meio Amargo <br>Doce de Leite com Ameixa <br>Doces de Leite e Nozes
-                <br> Salada de Frutas <br>(Creme com Morango, Abacaxi e Pêssego)
-            </p>
-        </div>
-        <div class="mydiv2">
-            <h1>♥ Bolos Especiais ♥</h1>
-            <h2>•Prestígio Especial</h2>
-            <p>(uma camada de coco, outra de ganache, cobertura de ganache)</p>
-            <h2>•Brigadeiro Tradicional</h2>
-            <p>(com recheio e cobertura de brigadeiro)</p>
-            <h2>•Bem Casado com Brigadeiro e Doce de Leite
-                <br>•Kinder Bueno
-                <br>•Ninho com Nutella
-                <br>Naked Cake com frutas da época
-            </h2>
-        </div>
-        <div class="mydiv2">
-            <h1>♥ Sabores Premium ♥</h1>
-            <h2 style="font-size: 1.5rem !important;">•Red Velvet com mousse de ninho
-                <br>•Red velvet com brigadeiro de cream cheesse
-            </h2>
-        </div>
+  <!-- SOBRE -->
+  <section class="section sobre" id="sobre">
+    <div class="sobre-wrap">
+      <div class="sobre-text">
+        <p class="eyebrow">Sobre Nós</p>
+        <h2>Cada doce conta uma <em>história</em></h2>
+        <p>
+          Somos apaixonados por transformar momentos especiais em algo ainda mais doce.
+          Nossa confeitaria nasceu com o objetivo de oferecer bolos feitos com carinho,
+          utilizando ingredientes de qualidade e receitas que encantam em cada detalhe.
+        </p>
+        <p>
+          Cada bolo é preparado com atenção e dedicação, pensando sempre em proporcionar
+          sabor, beleza e uma experiência única. Trabalhamos com diferentes estilos e sabores,
+          atendendo todos os gostos e ocasiões — de aniversários a conquistas especiais.
+        </p>
+        <a href="https://www.instagram.com/neirefreitasconfeitaria/" target="_blank" rel="noopener" class="btn btn-primary">
+          📷 Siga no Instagram
+        </a>
+      </div>
+      <div class="sobre-img"></div>
     </div>
-    <div class="pagina-4" id="pagina-4">
-        <button onclick="voltarSite()" class="butao4" id="butao4"> ← Voltar</button>
-        <div class="mydiv3">
-            <h1>♥Pacotes Especiais</h1>
-            <h2>♦Kit 1</h2>
-            <p>• 5 Pirulitos <br>• 4 Bolo Bombom <br> • 4 Pão de mel no Palito<br>• 6 Cupcake ou 6 Choco Maçãs</p>
-            <p class="Pzao">(Total: 19 Doces)</p>
-            <h2>♦Kit 2</h2>
-            <p>• 8 Pirulitos <br>5 Bolos Bombom <br>• 5 Pão de Mel no Palito <br>• 6 Cupcake ou 6 Choco Maçãs</p>
-            <p class="Pzao">(Total: 24 Doces)</p>
-            <h2>♦Kit 3</h2>
-            <p>• 10 Pirulitos <br>• 6 Pão de Mel no Palito <br>• 6 Bolos Bombom <br>• 4 Cakepocicles <br>• 6 Cupcake ou
-                6 Choco Maçãs</p>
-            <p class="Pzao">(Total: 32 Doces)</p>
-        </div>
-        
-        <script src="scripts.js"></script>
+  </section>
+
+  <!-- ============= PÁGINAS INTERNAS ============= -->
+
+  <!-- DOCES -->
+  <div class="inner-page" id="page-doces">
+    <div class="inner-header">
+      <button class="btn btn-back">← Voltar</button>
+      <h2>Nossos <em>Doces</em></h2>
+      <p class="section-sub">Feitos à mão, com carinho em cada detalhe.</p>
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-block">
+        <h3>Doces Enrolados Tradicionais</h3>
+        <ul>
+          <li>Brigadeiro Tradicional</li>
+          <li>Brigadeiro Branco</li>
+          <li>Beijinho</li>
+          <li>Bicho de Pé</li>
+        </ul>
+      </div>
+
+      <div class="menu-block">
+        <h3>Doces Especiais e Gourmet</h3>
+        <ul>
+          <li>Uva Glaçada</li>
+          <li>Brigadeiro de Café</li>
+          <li>Brigadeiro de Ninho com Nutella</li>
+          <li>Brigadeiro de Ninho</li>
+          <li>Brigadeiro de Churros</li>
+          <li>Brigadeiro de Prestígio</li>
+          <li>Brigadeiro Trufado <span class="note">(com chocolate granulê)</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-block">
+        <h3>Doces Finos</h3>
+        <ul>
+          <li>Brigadeiro de Damasco</li>
+          <li>Brigadeiro de Castanha de Caju</li>
+          <li>Brigadeiro com Pérola</li>
+          <li>Brigadeiro Brulê</li>
+          <li>Camafeu <span class="tag">*mín. 20 un.</span></li>
+          <li>Cestinha e copinho de chocolate
+            <span class="note">(decoração com cereja ou physalis)</span>
+            <span class="tag">*mín. 20 un.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOLOS -->
+  <div class="inner-page" id="page-bolos">
+    <div class="inner-header">
+      <button class="btn btn-back">← Voltar</button>
+      <h2>Nossos <em>Bolos</em></h2>
+      <p class="section-sub">Massas, coberturas, recheios e sabores premium.</p>
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-block">
+        <h3>♦ Massas</h3>
+        <ul>
+          <li>Baunilha</li>
+          <li>Chocolate</li>
+        </ul>
+        <h3>♦ Coberturas</h3>
+        <ul>
+          <li>Chantilly</li>
+          <li>Chantininho</li>
+          <li>Chantilly de Chocolate</li>
+        </ul>
+      </div>
+
+      <div class="menu-block">
+        <h3>♦ Recheios</h3>
+        <ul>
+          <li>Brigadeiro</li>
+          <li>Brigadeiro de Doce de Leite</li>
+          <li>Brigadeiro de Nozes</li>
+          <li>Brigadeiro de Ninho</li>
+          <li>Brigadeiro Branco com Morango</li>
+          <li>Brigadeiro com Abacaxi</li>
+          <li>Creme com Morango</li>
+          <li>Creme com Pêssego</li>
+        </ul>
+      </div>
+
+      <div class="menu-block">
+        <h3>♦ Recheios Especiais</h3>
+        <ul>
+          <li>Mousse de Chocolate ao Leite / Meio Amargo</li>
+          <li>Doce de Leite com Ameixa</li>
+          <li>Doce de Leite e Nozes</li>
+          <li>Salada de Frutas <span class="note">(creme com morango, abacaxi e pêssego)</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-block">
+        <h3>♥ Bolos Especiais</h3>
+        <ul>
+          <li><strong>Prestígio Especial</strong> <span class="note">(camada de coco, ganache e cobertura de ganache)</span></li>
+          <li><strong>Brigadeiro Tradicional</strong> <span class="note">(recheio e cobertura de brigadeiro)</span></li>
+          <li>Bem Casado com Brigadeiro e Doce de Leite</li>
+          <li>Kinder Bueno</li>
+          <li>Ninho com Nutella</li>
+          <li>Naked Cake com frutas da época</li>
+        </ul>
+      </div>
+
+      <div class="menu-block premium">
+        <h3>★ Sabores Premium</h3>
+        <ul>
+          <li>Red Velvet com mousse de ninho</li>
+          <li>Red Velvet com brigadeiro de cream cheese</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- KITS -->
+  <div class="inner-page" id="page-kits">
+    <div class="inner-header">
+      <button class="btn btn-back">← Voltar</button>
+      <h2>Pacotes <em>Especiais</em></h2>
+      <p class="section-sub">Kits deliciosos, ideais para presentear ou comemorar.</p>
+    </div>
+
+    <div class="kits-grid">
+      <div class="kit">
+        <div class="kit-tag">Kit 1</div>
+        <ul>
+          <li>5 Pirulitos</li>
+          <li>4 Bolo Bombom</li>
+          <li>4 Pão de Mel no Palito</li>
+          <li>6 Cupcakes ou 6 Choco Maçãs</li>
+        </ul>
+        <p class="kit-total">Total: 19 doces</p>
+      </div>
+
+      <div class="kit featured">
+        <div class="kit-tag">Kit 2</div>
+        <ul>
+          <li>8 Pirulitos</li>
+          <li>5 Bolo Bombom</li>
+          <li>5 Pão de Mel no Palito</li>
+          <li>6 Cupcakes ou 6 Choco Maçãs</li>
+        </ul>
+        <p class="kit-total">Total: 24 doces</p>
+      </div>
+
+      <div class="kit">
+        <div class="kit-tag">Kit 3</div>
+        <ul>
+          <li>10 Pirulitos</li>
+          <li>6 Pão de Mel no Palito</li>
+          <li>6 Bolo Bombom</li>
+          <li>4 Cakepocicles</li>
+          <li>6 Cupcakes ou 6 Choco Maçãs</li>
+        </ul>
+        <p class="kit-total">Total: 32 doces</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTATO / FOOTER -->
+  <footer class="footer" id="contato">
+    <div class="footer-inner">
+      <div>
+        <h3 class="brand-script footer-brand">Neire Freitas</h3>
+        <p>Confeitaria Artística — Doces & Bolos Personalizados</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://wa.me/5515997777210" target="_blank" rel="noopener">💬 WhatsApp</a>
+        <a href="https://www.instagram.com/neirefreitasconfeitaria/" target="_blank" rel="noopener">📷 Instagram</a>
+      </div>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Neire Freitas Confeitaria. Feito com ♥</p>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="https://wa.me/5515997777210?text=Ol%C3%A1,%20gostaria%20de%20fazer%20uma%20encomenda!"
+     target="_blank" rel="noopener" class="whats-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor">
+      <path d="M16 .5A15.5 15.5 0 0 0 2.6 24l-2 7.5 7.7-2A15.5 15.5 0 1 0 16 .5zm0 28.2a12.7 12.7 0 0 1-6.5-1.8l-.5-.3-4.6 1.2 1.2-4.4-.3-.5A12.7 12.7 0 1 1 16 28.7zm7-9.5c-.4-.2-2.3-1.1-2.6-1.2-.4-.1-.6-.2-.9.2s-1 1.2-1.2 1.5c-.2.2-.4.3-.8.1a10.5 10.5 0 0 1-5.1-4.5c-.4-.6.4-.6 1.1-2 .1-.2 0-.5 0-.7l-1.2-2.8c-.3-.7-.6-.6-.9-.6h-.7c-.2 0-.6.1-1 .5s-1.4 1.3-1.4 3.3 1.4 3.9 1.6 4.1a11.6 11.6 0 0 0 4.5 4c2.7 1.2 2.7.8 3.2.7.5-.1 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.4-.2-.8-.4z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
